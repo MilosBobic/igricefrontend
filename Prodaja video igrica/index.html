@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Prodaja video igara</title>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+    />
+    <link rel="stylesheet" href="assets/css/main.css" />
+  </head>
+  <body>
+    <img id="slika" src="images/slika1.jpg" alt="Slika 1" onclick="promeniSliku()">
+    <button id="theme-button" onclick="promeniTemu('light')">Svetla tema</button>
+  <button id="theme-button" onclick="promeniTemu('dark')">Tamna tema</button>
+    <div id="page-wrapper">
+      <!-- Header -->
+      <div id="header">
+        <!-- Logo -->
+        <h1>
+          <a href="index.html">Igrice QWERTY</a>
+        </h1>
+
+        <!-- Nav -->
+        <nav id="nav">
+          <ul>
+            <li class="current"><a href="index.html">Igrice</a></li>
+                <li><a href="left-sidebar.html">Kontakt</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Banner -->
+      <section id="banner">
+        <header>
+          <h2><em>QWERTY</em></h2>
+          <a href="#" class="button">Pročitaj više</a>
+        </header>
+      </section>
+
+      <!-- Highlights -->
+      <section class="wrapper style1">
+        <div>
+          <div class="row gtr-200">
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-paper-plane"></i>
+                <h3>Raspitajte se</h3>
+                <p>
+                  Pomoći ćemo vam da pronađete igricu po vašem ukusu!
+                </p>
+              </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-pencil-alt"></i>
+                <h3>Poručite</h3>
+                <p>Pošaljite nam igricu koju bi ste želeli i ona je vaša!</p>
+              </div>
+            </section>
+            <section class="col-4 col-12-narrower">
+              <div class="box highlight">
+                <i class="icon solid major fa-wrench"></i>
+                <h3>Instalacija</h3>
+                <p>
+                  Ako imate problema sa instalacijom tu smo da pomognemo!
+                </p>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gigantic Heading -->
+      <section class="wrapper style2">
+        <div>
+          <header class="major">
+            <h2>Igrice po najpovoljnijim cenama!</h2>
+            <p>AAA igrice i kod nas!</p>
+          </header>
+        </div>
+      </section>
+
+      <!-- Posts -->
+      <section class="wrapper style1">
+        <div>
+          <div class="row">
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/CSGO.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>Counter Strike: Global Offensive</h3>
+                  <p>
+                    Najpopularnija pucačina na svetu po ceni od 3.99$
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/SKYRIM.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>The Elder Scrolls V: Skryrim</h3>
+                  <p>
+                    Vrhunska RPG igrica, lovite zmajeve za samo 8.99$!
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+          <div class="row">
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/CIVVI.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>Sid Meiers Civilization VI</h3>
+                  <p>
+                    Da li ste strateg? Ova igrica će vas oduševiti!
+                  </p>
+                </div>
+              </div>
+            </section>
+            <section class="col-6 col-12-narrower">
+              <div class="box post">
+                <a href="#" class="image left"
+                  ><img src="images/GTAV.jpg" alt=""
+                /></a>
+                <div class="inner">
+                  <h3>Grand Theft Auto V</h3>
+                  <p>
+                    Ako ste za odličnu priču ili bi ste radije da pljačkate banke sa prijateljima, Grand Theft Auto V je stvorena za vas!
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+      <h3>Za koga kupujete igricu?</h3>
+      <label>
+        <input type="radio" name="opcije" value="Nadamo se da će vam se svideti!"> Za sebe
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="opcije" value="Nadamo se da će im se svideti!"> Za prijatelja
+      </label>
+      <br>
+      <label>
+        <input type="radio" name="opcije" value="Hvala na vašem vremenu!"> Ne želim da odgovorim
+      </label>
+      <br>
+      <button onclick="generisiPoruku()">Generiši poruku</button>
+      
+      <p id="rezultat"></p>
+
+      <!-- Footer -->
+      <div id="footer">
+        <div>
+          <div class="row">
+          </div>
+        </div>
+
+        <!-- Icons -->
+        <ul class="icons">
+          <li>
+            <a href="https://twitter.com/" class="icon brands fa-twitter"
+              ><span class="label">Twitter</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              class="icon brands fa-facebook-f"
+              ><span class="label">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/" class="icon brands fa-github"
+              ><span class="label">GitHub</span></a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/feed/"
+              class="icon brands fa-linkedin-in"
+              ><span class="label">LinkedIn</span></a
+            >
+          </li>
+        </ul>
+
+        <!-- Copyright -->
+        <div class="copyright">
+          <ul class="menu">
+            <li>&copy; Untitled. All rights reserved</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!--Scroll To Top-->
+    <button class="back-to-top hidden" <img src="/images/bg01.jpg" alt="">>
+      <svg
+        class="back-to-top-icon"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+      </svg>
+    </button>
+    
+
+    <!-- Scripts -->
+    <script src="assets/js/checkbox.js"></script>
+    <script src="assets/js/button.js"></script>
+    <script src="assets/js/tema.js"></script>
+    <script src="assets/js/slika.js"></script>
+  </body>
+</html>
